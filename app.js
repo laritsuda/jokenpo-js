@@ -12,8 +12,8 @@ const paperButton_img = document.querySelector("#paperButton");
 const rockButton_img = document.querySelector("#rockButton");
 const scissorsButton_img = document.querySelector("#scissorsButton");
 
-
-function game(userMove){
+game = (userMove) => {
+//function game(userMove){
     possibleMoves = ["rock", "paper", "scissors"]
     random123 = Math.floor(Math.random() * 3);
     computerMove = possibleMoves[random123];
@@ -47,7 +47,9 @@ function game(userMove){
     }
 
 }
-function main() {
+
+ main = () => {
+//function main() {
     restart.addEventListener("click", () => game('restart'))
     paperButton_img.addEventListener("click", () => game("Paper") )
     rockButton_img.addEventListener("click", () => game("Rock") )
